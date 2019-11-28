@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  lb-service: # Nginx Load Balancer
+    image: webjet-nglb:latest
+    container_name: nglb
+    volumes:
+      - ./ipwall:/etc/nginx/ipwall
+    ports:
+      - 44405:80
+
+  lb-config-nglb: # API Service (Change Nginx config file)
+    image: lb-config-service:latest
+    container_name: config-server
+    volumes:
+      - ./ipwall:/ipwall
+    ports:
+      - 44406:8080

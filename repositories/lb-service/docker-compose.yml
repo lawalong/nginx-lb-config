@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  webjet-nglb:
+    image: webjet-nglb:latest
+    ports:
+    - 44405:80

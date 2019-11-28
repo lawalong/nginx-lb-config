@@ -63,7 +63,10 @@
 -   http://localhost:44406/
 
 
-
+Apply changes: 
+```
+    $ bash override_config.sh
+```
 
 ## - Assumptions
 1. If using Kubernetes, auto pull latest images could be another solution

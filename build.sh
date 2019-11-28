@@ -1,2 +1,2 @@
-(cd lb-service ; bash build.sh)
-(cd lb-config-service ; bash build.sh)
+(cd repositories/eab-service ; bash build.sh)
+(cd repositories/lb-config-service ; bash build.sh)
